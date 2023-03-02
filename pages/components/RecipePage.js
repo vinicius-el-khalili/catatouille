@@ -20,8 +20,8 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
             <div className={style.title}>{title}</div>
             
             <div className={style.ingredients}>
-                <h2>Ingredients</h2>    
-                {ingredients}
+                <h2>Ingredients</h2>
+                <p>check console</p>
             </div>
 
         </div>

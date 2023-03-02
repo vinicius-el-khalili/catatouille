@@ -20,7 +20,6 @@ export async function getStaticProps(){
 }
 
 export default function Home({recipes}) {
-  console.log(recipes)
   return (
   <>
   
