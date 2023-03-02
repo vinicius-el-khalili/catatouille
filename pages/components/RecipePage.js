@@ -21,7 +21,9 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
             
             <div className={style.ingredients}>
                 <h2>Ingredients</h2>
-                <p>check console</p>
+                {ingredients.map(ing=>{return(
+                    <p>{ing}</p>
+                )})}
             </div>
 
         </div>
