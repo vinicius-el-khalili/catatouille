@@ -20,11 +20,9 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
             
             <div className={style.ingredients}>
                 <h2>Ingredients</h2>    
-                {ingredients.map(ingredient=>{return(
-                    <p key={title+ingredient}>{ingredient}</p>
-                )})}
+                {ingredients}
             </div>
-                        
+
         </div>
     );
 }
