@@ -3,7 +3,6 @@ import style from "@/styles/RecipePage.module.css"
 import Image from "next/image";
 
 const RecipePage = ({thumbnail,title,ingredients,method}) => {
-    console.log(ingredients)
     return (
         <div className={style.recipePageContainer}>
             
@@ -21,7 +20,7 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
             
             <div className={style.ingredients}>
                 <h2>Ingredients</h2>
-                
+                {ingredients}
             </div>
 
         </div>

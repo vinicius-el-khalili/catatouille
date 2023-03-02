@@ -6,7 +6,9 @@ const Recipe = ({recipe}) => {
             <RecipePage
             thumbnail={"https:"+recipe.fields.thumbnail.fields.file.url}
             title={recipe.fields.title}
-            ingredients={recipe.fields.ingredients}
+            ingredients={recipe.fields.ingredients.map(ing=>{return(
+                <p key={recipe.fields.title+ing}>{ing}</p>
+            )})}
             method={recipe.fields.method}
             />
     );
