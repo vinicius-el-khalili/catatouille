@@ -49,6 +49,14 @@ export async function getStaticProps(context){
     let recipe = response.items.filter(entry=>{
         return entry.fields.slug===context.params.recipe
     })
+    if (!recipe.lenght){
+        return {
+            redirect:{
+                destination:"/",
+                permanent:false
+            }
+        }
+    }
     return{
         props:{
             recipe: recipe[0]
