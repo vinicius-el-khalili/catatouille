@@ -3,6 +3,7 @@ import style from "@/styles/RecipePage.module.css"
 import Image from "next/image";
 
 const RecipePage = ({thumbnail,title,ingredients,method}) => {
+    console.log(ingredients)
     return (
         <div className={style.recipePageContainer}>
             
