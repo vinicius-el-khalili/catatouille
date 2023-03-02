@@ -36,9 +36,7 @@ export default function Home({recipes}) {
         <RecipeCard
           key={recipe.sys.id+"RC"}
           title={recipe.fields.title}
-          cookingTime={recipe.fields.cookingTime}
           slug={recipe.fields.slug}
-          thumbnail={recipe.fields.thumbnail}
         />)})}
 
     </div>
