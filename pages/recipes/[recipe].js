@@ -1,8 +1,14 @@
 import { createClient } from 'contentful'
+import RecipePage from '../components/RecipePage';
 
 const Recipe = ({recipe}) => {
         return (
-            <h1>{recipe.fields.title}</h1>
+            <RecipePage
+            thumbnail={"https:"+recipe.fields.thumbnail.fields.file.url}
+            title={recipe.fields.title}
+            ingredients={recipe.fields.ingredients}
+            method={recipe.fields.method}
+            />
     );
 }
 

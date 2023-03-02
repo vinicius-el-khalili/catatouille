@@ -1,0 +1,44 @@
+.recipePageContainer{
+    width: 80%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.thumbnail{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    grid-column: span 4;
+    border: 1px solid black;
+}
+.title{
+    font-size: 4rem;
+    font-weight: bolder;
+    grid-column: span 4;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+.ingredients,.method{
+    grid-column: span 2;
+    text-align: center;
+    padding-top: 3rem;
+}
+.ingredients>h2,.method>h2{
+    padding-bottom: 1rem;
+}
+.method{
+    padding-left: 3rem;
+}
+@media screen and (max-width:800px){
+    .ingredients,.method{
+        grid-column: span 4;
+        text-align:start;
+        padding: 2rem 0 2rem 0;
+        width: 80%;
+        max-width: 500px;
+        margin: auto;
+    }
+    .method{
+        padding-left: 0;
+    }
+}
