@@ -50,6 +50,14 @@ export async function getStaticProps(context){
         return entry.fields.slug===context.params.recipe
     })
     
+    if (!recipe.length){
+        return {
+            redirect:{
+                destination:"/",
+                permanent:false
+            }
+        }
+    }
     return{
         props:{
             recipe: recipe[0]
