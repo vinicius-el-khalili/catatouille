@@ -18,7 +18,7 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
 
             <div className={style.title}>{title}</div>
             
-            <h1>{ingredients[0]}</h1>
+            <h1>{ingredients}</h1>
             
         </div>
     );
