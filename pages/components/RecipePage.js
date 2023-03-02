@@ -1,4 +1,3 @@
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import style from "@/styles/RecipePage.module.css"
 import Image from "next/image";
 
