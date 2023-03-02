@@ -22,7 +22,7 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
             <div className={style.ingredients}>
                 <h2>Ingredients</h2>
                 {ingredients.map(ing=>{return(
-                    <p>{ing}</p>
+                    <p key={ing}>{ing}</p>
                 )})}
             </div>
 
