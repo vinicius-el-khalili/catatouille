@@ -4,12 +4,12 @@
     grid-template-rows: auto 1fr auto;
 }
 .layout>header{
-    padding: 2rem 0 4rem 0;
+    padding: 2em 0 4em 0;
     margin: auto; 
     height: 100%;
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    font-size: 1rem;
 }
 .pageHeader{
     display: flex;
@@ -45,15 +45,30 @@
 }
 .pageFooter{
     background-color: black;
-    color: #F4E640;
+    color: var(--el1);
     margin-top: auto;
     text-align: center;
     padding: 10px;
     font-weight:lighter;
 }
 .catatouille{
-    width: 150px;
-    height: 150px;
+    width: 8em;
+    height: 8em;
     position: relative;
 }
 /* Responsiveness */
+@media screen and (max-width:600px) {
+    .layout>header{
+        font-size: .7rem;
+        padding: 0;
+    }
+    .pageHeader{
+        flex-direction: column-reverse;
+    }
+    .pageTitle{
+        transform: translate(0,-15px);
+    }
+    .catatouille{
+        transform: translate(0,10px);
+    }
+}

@@ -27,3 +27,8 @@
       grid-column: span 2;
   }
 }
+@media screen and (max-width:400px) {
+  .titleContainer{
+    font-size: 3rem;
+  }
+}
