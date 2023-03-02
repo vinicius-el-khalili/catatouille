@@ -18,17 +18,7 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
 
             <div className={style.title}>{title}</div>
             
-            <div className={style.ingredients}>
-                <h2>Ingredients</h2>    
-                {ingredients.map(ingredient=>{return(
-                    <p key={title+ingredient}>{ingredient}</p>
-                )})}
-            </div>
-
-            <div className={style.method}>
-                <h2>Instructions</h2>
-                {documentToReactComponents(method)}
-            </div>
+            
             
         </div>
     );
