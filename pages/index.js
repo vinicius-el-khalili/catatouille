@@ -37,6 +37,7 @@ export default function Home({recipes}) {
           key={recipe.sys.id+"RC"}
           title={recipe.fields.title}
           slug={recipe.fields.slug}
+          thumbnail={recipe.fields.thumbnail.fields.file.fileName}
         />)})}
 
     </div>
