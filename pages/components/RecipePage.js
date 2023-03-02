@@ -18,8 +18,13 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
 
             <div className={style.title}>{title}</div>
             
-            <h1>{ingredients}</h1>
-            
+            <div className={style.ingredients}>
+                <h2>Ingredients</h2>    
+                {ingredients.map(ingredient=>{return(
+                    <p key={title+ingredient}>{ingredient}</p>
+                )})}
+            </div>
+                        
         </div>
     );
 }
