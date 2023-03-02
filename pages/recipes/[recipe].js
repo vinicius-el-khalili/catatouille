@@ -1,4 +1,5 @@
 import { createClient } from 'contentful'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import RecipePage from '../components/RecipePage';
 
 const Recipe = ({recipe}) => {
@@ -9,7 +10,7 @@ const Recipe = ({recipe}) => {
             ingredients={recipe.fields.ingredients.map(ing=>{return(
                 <p key={recipe.fields.title+ing}>{ing}</p>
             )})}
-            method={recipe.fields.method}
+            method={documentToReactComponents(recipe.fields.method)}
             />
     );
 }

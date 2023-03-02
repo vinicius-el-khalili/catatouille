@@ -20,7 +20,6 @@
 }
 .ingredients,.method{
     grid-column: span 2;
-    text-align: center;
     padding-top: 3rem;
 }
 .ingredients>h2,.method>h2{

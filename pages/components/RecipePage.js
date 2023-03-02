@@ -23,6 +23,11 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
                 {ingredients}
             </div>
 
+            <div className={style.method}>
+                <h2>Instructions</h2>
+                {method}
+            </div>
+
         </div>
     );
 }
