@@ -1,3 +1,29 @@
-.text{
-  color:blue
+.gridContainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  max-width: fit-content;
+  gap: 2rem;
+}
+.titleContainer{
+  border-bottom: 1px solid black;
+  padding-bottom: 12px ;
+  color: black;
+  width: 100%;
+  height: 80%;
+  font-size: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  grid-column: span 1;
+}
+
+/* Responsiveness */
+@media screen and (min-width:800px) {
+  .gridContainer{
+      grid-template-columns: 1fr 1fr;
+  }
+  .titleContainer{
+      grid-column: span 2;
+  }
 }
