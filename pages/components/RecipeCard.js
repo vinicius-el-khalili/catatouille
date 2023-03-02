@@ -12,7 +12,20 @@ const RecipeCard = ({title,slug,thumbnail}) => {
                     </Link>
             </div>
 
-            <h1>{thumbnail}</h1>
+            <div className={style.thumbnail}>
+                <Link href={'/recipes/'+slug} className={style.link}>
+                    <Image
+                        src={"https:"+thumbnail}
+                        fill
+                        style={{objectFit:"cover"}}
+                        alt={title}
+                        priority={true}
+                        sizes="(max-width: 1200px) 100vw,
+                                (min-width: 1200px) 80vw,
+                                "
+                        />
+                    </Link>
+            </div>
         </div>
     );
 }
