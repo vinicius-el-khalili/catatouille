@@ -3,6 +3,11 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import RecipePage from '../components/RecipePage';
 
 const Recipe = ({recipe}) => {
+        if (!recipe){
+            return (
+                <div>Loading...</div>
+            )
+        }
         return (
             <RecipePage
             thumbnail={"https:"+recipe.fields.thumbnail.fields.file.url}
@@ -32,7 +37,7 @@ export async function getStaticPaths(){
     })
     return {
         paths,
-        fallback:false
+        fallback:true
     }
 
 }
