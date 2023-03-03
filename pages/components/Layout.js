@@ -1,9 +1,11 @@
 import Link from "next/link"
 import style from "@/styles/Layout.module.css"
 import Image from "next/image";
+import Navbar from "./Navbar";
 const Layout = ({children}) => {
     return (
         <div className={style.layout}>
+            <Navbar></Navbar>
             <header>
                 <Link href={"/"} className={style.pageHeader}>
                     <div className={style.pageTitle}>

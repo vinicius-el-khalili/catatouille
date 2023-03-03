@@ -1,7 +1,7 @@
 .layout{
     min-height: 100vh;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
 }
 .layout>header{
     padding: 2em 0 4em 0;
@@ -64,6 +64,7 @@
     }
     .pageHeader{
         flex-direction: column-reverse;
+        margin-top: 40px;
     }
     .pageTitle{
         transform: translate(0,-15px);
