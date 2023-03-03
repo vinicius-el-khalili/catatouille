@@ -17,8 +17,8 @@ export default function Navbar(){
             </div>
             <div
                 className={toggle?
-                    `${style.button} ${style.navOn}`:
-                    `${style.button} ${style.navOff}`
+                    `${style.button} ${style.buttonOn}`:
+                    `${style.button} ${style.buttonOff}`
                 }
                 onClick={()=>{toggle?setToggle(false):setToggle(true)}}
                 ></div>
