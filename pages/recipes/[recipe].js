@@ -53,11 +53,12 @@ export async function getStaticProps(context){
     if (!recipe.length){
         return {
             redirect:{
-                destination:"/",
+                destination:"/404",
                 permanent:false
             }
         }
     }
+
     return{
         props:{
             recipe: recipe[0]
