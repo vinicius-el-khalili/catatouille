@@ -27,7 +27,7 @@ export default function Home({recipes}) {
     <div className={style.gridContainer}>
     
       <div className={style.titleContainer}>
-        RECIPES
+        All recipes
       </div>
   
       {recipes.items.map(recipe=>{return (
