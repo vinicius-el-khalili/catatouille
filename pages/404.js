@@ -2,6 +2,7 @@ import { createClient } from 'contentful'
 import Image from 'next/image'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import style from "@/styles/NotFound.module.css"
 
 export default function NotFound({notFound}){
     const router = useRouter()
@@ -11,10 +12,11 @@ export default function NotFound({notFound}){
         },4000)
     },[])
     return (
-        <div className="NotFound">
-            <h1>404</h1>
-            <h2>Page not found</h2>
-            <p>Redirecting to home page...</p>
+        <div className={style.NotFound}>
+            <span>
+                <h1>404</h1>
+                <h2>Page not found</h2>
+            </span>
             <div style={{
                 position:"relative",
                 width:"300px",
@@ -29,6 +31,7 @@ export default function NotFound({notFound}){
                     alt={"404: Page not Found"}
                 />
             </div>
+            <h2>Redirecting to home page...</h2>
         </div>
     )
 }

@@ -1,0 +1,13 @@
+.NotFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.NotFound>h1{
+    font-size: 4rem;
+}
+.NotFound>span{
+    text-align: center;
+}
