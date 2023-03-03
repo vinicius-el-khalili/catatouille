@@ -14,9 +14,9 @@ export default function Navbar(){
             }>
                 
                 {/* ---- LINKS ----*/}
-                <Link href={"/"} className={style.link} onClick={()=>{setToggle(false)}}>Main dishes</Link>
-                <Link href={"/"} className={style.link} onClick={()=>{setToggle(false)}}>Side dishes</Link>
-                <Link href={"/"} className={style.link} onClick={()=>{setToggle(false)}}>Desserts</Link>            
+                <Link href={"/categories/main-dish"} className={style.link} onClick={()=>{setToggle(false)}}>Main dishes</Link>
+                <Link href={"/categories/side-dish"} className={style.link} onClick={()=>{setToggle(false)}}>Side dishes</Link>
+                <Link href={"/categories/dissert"} className={style.link} onClick={()=>{setToggle(false)}}>Disserts</Link>            
             
             </div>
 
