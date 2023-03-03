@@ -5,18 +5,17 @@
     grid-template-columns: repeat(4,1fr);
 }
 .thumbnail{
-    width: 100%;
-    max-width: 500px;
+    width: 400px;
+    height: 300px;
     margin: auto;
-    height: 400px;
     position: relative;
     grid-column: span 4;
     border: 4px solid black;
     box-sizing: border-box;
-    box-shadow: -5px 5px;
+    box-shadow: -10px 10px rgb(61, 61, 61);
 }
 .title{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bolder;
     grid-column: span 4;
     text-align: center;
@@ -44,5 +43,11 @@
     }
     .title{
         font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .thumbnail{
+        width: 80%;
     }
 }

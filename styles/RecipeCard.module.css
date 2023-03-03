@@ -1,5 +1,6 @@
 .recipeCardContainer{
-    width: 400px;
+    width: 300px;
+    height: 350px;
     margin: 20px auto;
     display:flex;
     flex-direction: column;
@@ -41,8 +42,9 @@
     font-size: 1.5rem;
 }
 .thumbnail{
-    border-left:  15px solid var(--el6);
-    border-right: 15px solid var(--el6);
+    border-left:  15px solid var(--el2);
+    border-right: 15px solid var(--el2);
+    border-bottom: 15px solid var(--el2);
     height: 400px;
     width: 100%;
     position: relative;
@@ -54,7 +56,7 @@
 @media screen and (max-width:1000px) {
    
     .recipeCardContainer{
-        width: 300px;
+        width: 250px;
     }
     .thumbnail{
         height: 300px;

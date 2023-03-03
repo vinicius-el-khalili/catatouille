@@ -1,6 +1,6 @@
 import style from '@/styles/Home.module.css'
 import { createClient } from 'contentful'
-import RecipeCard from './components/RecipeCard'
+import RecipeCard from '@/components/RecipeCard'
 
 export async function getStaticProps(){
   const client = createClient({

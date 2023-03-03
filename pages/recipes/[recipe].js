@@ -1,6 +1,6 @@
 import { createClient } from 'contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import RecipePage from '../components/RecipePage';
+import RecipePage from '@/components/RecipePage';
 
 const Recipe = ({recipe}) => {
         if (!recipe){

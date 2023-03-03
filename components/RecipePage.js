@@ -5,6 +5,8 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
     return (
         <div className={style.recipePageContainer}>
             
+            <div className={style.title}>{title}</div>
+            
             <div className={style.thumbnail}>
                 <Image 
                 src={thumbnail}
@@ -14,8 +16,6 @@ const RecipePage = ({thumbnail,title,ingredients,method}) => {
                 priority={true}
                 />
             </div>
-
-            <div className={style.title}>{title}</div>
             
             <div className={style.ingredients}>
                 <h2>Ingredients</h2>

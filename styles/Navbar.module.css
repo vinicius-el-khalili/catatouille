@@ -1,7 +1,6 @@
 .Navbar{
     background-color: var(--el1);
     display: flex;    
-    font-size:1.2rem;
     min-height: 50px;
     width: 100vw;
 }

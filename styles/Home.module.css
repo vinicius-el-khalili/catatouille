@@ -19,7 +19,7 @@
 }
 
 /* Responsiveness */
-@media screen and (min-width:800px) {
+@media screen and (min-width:650px) {
   .gridContainer{
       grid-template-columns: 1fr 1fr;
   }
