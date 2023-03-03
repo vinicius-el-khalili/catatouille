@@ -24,25 +24,35 @@
 .button{
     width: 35px;
     height: 35px;
-    margin: 24px;
+    margin: 7px;
+    margin-right: 14px;
     border: 1px solid black;
-    background-color: var(--el6);
-    opacity: .4;
     display: none;
     position: fixed;
     top: 0;
-    border-radius: 100%;
+    border-radius: 0px;
 }
+.burger{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: .5s;
+}
+
 @media screen and (max-width:600px) {
     .Navbar{
         flex-direction: column-reverse;
         align-items: flex-end;
         position: fixed;
         z-index: 2;
-        background-color: transparent;
+        opacity: .9;
     }
     .button{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
     .menu{
         flex-direction: column;
@@ -53,7 +63,6 @@
         height: 100vh;
         text-align: center;
         background-color: var(--el1);
-        opacity: .9;
     }
     .link{
         width: 100%;
@@ -62,6 +71,22 @@
         display: none;
     }
     .buttonOn{
-        opacity: 1;
+        border-radius: 10px;
+        gap: 0;
+    }
+    .buttonOn>.burger{
+        width: 30px;
+    }
+    .buttonOn>.burger:nth-child(1){
+        background-color: var(--el6);
+        transform: translate(0,100%) rotate(135deg);
+    }
+    .buttonOn>.burger:nth-child(2){
+        background-color: transparent;
+        transform: rotate(180deg);
+    }
+    .buttonOn>.burger:nth-child(3){
+        background-color: var(--el6);
+        transform: translate(0,-100%) rotate(-135deg);
     }
 }

@@ -5,23 +5,33 @@ export default function Navbar(){
     const [toggle,setToggle] = useState(false)
     return(
         <div className={style.Navbar}>
+            {/* ---- MENU ----*/}
             <div className={
                 toggle?
                 `${style.menu} ${style.menuOn}`:
                 `${style.menu} ${style.menuOff}`
             
             }>
-                <Link href={"/"} className={style.link}>Main dishes</Link>
-                <Link href={"/"} className={style.link}>Side dishes</Link>
-                <Link href={"/"} className={style.link}>Desserts</Link>            
+                
+                {/* ---- LINKS ----*/}
+                <Link href={"/"} className={style.link} onClick={()=>{setToggle(false)}}>Main dishes</Link>
+                <Link href={"/"} className={style.link} onClick={()=>{setToggle(false)}}>Side dishes</Link>
+                <Link href={"/"} className={style.link} onClick={()=>{setToggle(false)}}>Desserts</Link>            
+            
             </div>
+
+            {/* ---- BURGER BUTTON ----*/}
             <div
                 className={toggle?
                     `${style.button} ${style.buttonOn}`:
                     `${style.button} ${style.buttonOff}`
                 }
                 onClick={()=>{toggle?setToggle(false):setToggle(true)}}
-                ></div>
+            >
+                <div className={style.burger}/>
+                <div className={style.burger}/>
+                <div className={style.burger}/>
+            </div>
         </div>
     )
 }
