@@ -48,7 +48,7 @@
     color: var(--el1);
     margin-top: auto;
     text-align: center;
-    padding: 10px;
+    height: 2rem;
     font-weight:lighter;
 }
 .footerLink{

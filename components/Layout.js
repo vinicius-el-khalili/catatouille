@@ -23,15 +23,6 @@ const Layout = ({children}) => {
                 {children}
             </div>
             <footer className={style.pageFooter}>
-                <a 
-                href="https://github.com/vinicius-el-khalili/catatouille"
-                className={style.footerLink}
-                rel="noopener noreferrer"
-                target="_blank"
-                >
-                    <Image src={"/githubLogo.svg"} width={20} height={20}/>
-                    <p>github</p>
-                </a>
             </footer>
         </div>
     );
