@@ -13,4 +13,6 @@ You can check the live demo here:
 https://the-catatouille.vercel.app/
 
 
+This project is based on a tutorial provided by NetNinja -> https://www.youtube.com/@NetNinja .
+
 Bon appétit!
