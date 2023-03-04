@@ -29,7 +29,7 @@ const Layout = ({children}) => {
                 rel="noopener noreferrer"
                 target="_blank"
                 >
-                    <Image src={"/githubLogo.svg"} width={30} height={30}/>
+                    <Image src={"/githubLogo.svg"} width={20} height={20}/>
                     <p>github</p>
                 </a>
             </footer>
