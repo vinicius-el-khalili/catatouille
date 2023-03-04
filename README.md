@@ -1,7 +1,7 @@
 Welcome to The Catatouille routine cousine!
 
 In this project, I built a simple website that displays different categories of recipes.
-The front-end was built with Next.js, and the backend API is generated through Contentful, which is a headless CMS.
+The front-end was built with Next.js, while the back-end API is generated through Contentful, which is a headless CMS.
 This project contains the following features:
 
 - New recipes can be added, edited or removed from the database by the administrator (me) using the Contentful platform;
