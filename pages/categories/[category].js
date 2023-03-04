@@ -55,7 +55,6 @@ export async function getStaticProps(context){
     const response = await client.getEntries({
         content_type:"recipe"
     })
-    console.log(response.items)
     let recipes = response.items.filter(entry=>{
         return entry.fields.category===context.params.category
     })
